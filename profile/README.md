@@ -2,8 +2,12 @@
 
 <p align="center"><b>Dgraph Labs is now part of Hypermode!</b></p>
 
-<p align="center">The Dgraph team has joined Hypermode's mission to make knowledge graphs and AI approachable for all developers.</p>
-
-<p align="center">Read more on Hypermode's commitment to Dgraph in <a href="https://hypermode.com/blog/the-future-of-dgraph-is-open-serverless-and-ai-ready">The future of Dgraph is open, serverless, and AI-ready</a>.</p>
+<p align="center">The core maintainers of Dgraph, Badger, and Ristretto have joined Hypermode's mission to make knowledge graphs and AI approachable for all developers. Read more on Hypermode's commitment to Dgraph in <a href="https://hypermode.com/blog/the-future-of-dgraph-is-open-serverless-and-ai-ready">The future of Dgraph is open, serverless, and AI-ready</a>.</p>
 
 <p align="center">As part of the transition, active projects are being migrated to <a href="https://github.com/hypermodeinc">github.com/hypermodeinc</a>.</p>
+
+<div align="center">
+  
+  [![chat](https://img.shields.io/discord/1267579648657850441)](https://discord.gg/NJQ4bJpffF)
+
+</div>
