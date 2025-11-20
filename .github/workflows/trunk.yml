@@ -8,7 +8,7 @@ permissions:
   checks: write
 
 env:
-  GOPRIVATE: github.com/hypermodeinc/*
+  GOPRIVATE: github.com/dgraph-io/*
 
 jobs:
   check:
@@ -21,7 +21,7 @@ jobs:
         env:
           TOKEN: ${{ secrets.GO_PRIVATE_MODULES }}
         run:
-          git config --global url."https://admin-hypermode:${TOKEN}@github.com".insteadOf
+          git config --global url."https://admin-dgraph:${TOKEN}@github.com".insteadOf
           "https://github.com"
       - name: Trunk Code Quality
         uses: trunk-io/trunk-action@v1
