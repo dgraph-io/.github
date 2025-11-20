@@ -1,0 +1,27 @@
+name: Trunk Code Quality
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+  actions: write
+  checks: write
+
+env:
+  GOPRIVATE: github.com/hypermodeinc/*
+
+jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Configure git for private modules
+        env:
+          TOKEN: ${{ secrets.GO_PRIVATE_MODULES }}
+        run:
+          git config --global url."https://admin-hypermode:${TOKEN}@github.com".insteadOf
+          "https://github.com"
+      - name: Trunk Code Quality
+        uses: trunk-io/trunk-action@v1
